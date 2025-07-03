@@ -9,6 +9,7 @@
             if(myuser.equals("admin")&&mypass.equals("nepal123")){
                 response.sendRedirect("quiz.jsp");
                 session.setAttribute("user","admin");
+                session.setAttribute("score","0");
             }else{
                 out.print("login failed???");
             }
